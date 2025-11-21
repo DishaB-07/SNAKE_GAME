@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background: #030014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+    transition: filter 0.3s ease;
+}
+
+canvas {
+    border: 3px solid #0ff;
+    box-shadow: 0 0 20px #0ff, inset 0 0 20px #0ff;
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    text-align: center;
+}
+
+.title {
+    color: #0ff;
+    font-size: 48px;
+    text-shadow: 0 0 20px #0ff;
+}
+
+.menu button,
+.game-over button {
+    background: #0ff;
+    padding: 15px 40px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #0ff;
+    margin-top: 10px;
+}
+
+.mobile-controls {
+    position: absolute;
+    bottom: 20px;
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.mobile-controls button {
+    background: rgba(0,255,255,0.2);
+    border: 2px solid #0ff;
+    color: #0ff;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.middle-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* GAME OVER SCREEN */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    background: rgba(0, 0, 30, 0.95);
+    padding: 40px 55px;
+    border: 3px solid #f0f;
+    box-shadow: 0 0 25px #f0f, inset 0 0 25px #f0f;
+    text-align: center;
+    display: none;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.35s ease;
+}
+
+.game-over.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.game-over h2 {
+    color: #f0f;
+    font-size: 46px;
+    text-shadow: 0 0 25px #f0f;
+}
+
+.game-over p {
+    color: #0ff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
