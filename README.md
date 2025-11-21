@@ -27,3 +27,6 @@ SNAKE_GAME
 1) index.html         # Game UI + Canva
 2) style.css          # Styling + UI design
 3) script.js          # Game logic + animations
+
+LINK 
+https://dishab-07.github.io/SNAKE_GAME/
